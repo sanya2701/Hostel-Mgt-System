@@ -1,0 +1,88 @@
+<html>
+<head>
+	<style>
+      body{
+      	background-image: url("New folder/11.jpg");
+      	//height: 100px;
+      	background-size:cover;
+      	background-position: center;
+      }
+      .login-page{
+      	width: 500px;
+       	padding: 10% 0 0 0;
+      	margin: auto;
+      }
+      .form{
+      	position:relative;
+      	height:450px;
+      	background: #ffffff;
+      	max-width:360px;
+      	margin: 0 auto 100px;
+      	padding: 50px;
+      	border-radius: 20px;
+      }
+      .form input{
+      	font-family:"roboto",sans-serif;
+      	outline:1;
+      	background:#f2f2f2;
+      	width:100%;
+      	border:1;
+      	margin:0 0 15px;
+      	padding:15px;
+      	box-sizing:border-box;
+      	font-size:14px;
+       }
+        .form button{
+      	font-family:"roboto",sans-serif;
+      	text-transform:uppercase;
+      	outline:0;
+      	background:#4CAF50;
+      	width:100%; 
+      	border:0;
+      	padding:15px;
+      	color:#ffffff;
+      	font-size:14;
+      	cursor:pointer;
+      }
+
+      }
+	</style>
+     <script src="User_Reg.js"></script>
+</head>
+<body>
+	<div class="login-page">
+    <center><h1 style="margin-top: -80px;">Register</h1></center>
+	<div class="form">
+      <form name="reg" class="Reg-form" action="regcode.php" method="post" onSubmit="return formValidation();">
+
+      	<div class="form-group">
+      <label for="name"></label>
+      <input type="text" class="form-control" id="pwd" placeholder="Name" name="name">
+    </div><br/>
+
+    <div class="form-group">
+      <label for="email"></label>
+      <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+    </div><br/>
+
+    <div class="form-group">
+      <label for="pwd"></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Password" name="psw">
+    </div><br/>
+    
+    <div class="form-group">
+      <label for="mob"></label>
+      <input type="text" class="form-control" id="pwd" placeholder="Mobile No" name="mobno">
+    </div><br/>
+   
+    <div class="form-group">
+      <label for="pwd"></label>
+      <input type="text" class="form-control" id="pwd" placeholder="Date of Birth" name="dob">
+    </div><br/>
+    
+    <input type="submit" value="Submit" name="submit">
+  </form>
+</div>
+
+</body>
+</html>
